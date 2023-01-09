@@ -5,4 +5,3 @@ $('form').submit(function (event){
     var city= $('input').val
 })
 
-
