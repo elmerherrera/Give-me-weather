@@ -16,26 +16,34 @@
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
           </form>
-
           </div>
       </nav>
-      <div class="btn-group-vertical d-flex flex column col-3" role="group" aria-label="Vertical button group">
-        <br>
-        <button type="button" class="btn btn-dark" data-city="Atlanta">Atlanta, GA</button>
-        <br>
-        <button type="button" class="btn btn-dark" data-city="Paris">Paris, France</button>
-        <br>
-        <button type="button" class="btn btn-dark" data-city="Mexico city">Mexico City, Mexico</button>
-        <br>
-        <button type="button" class="btn btn-dark" data-city="Los angeles">Buena Vista, California</button>
-        <br>
-        <button type="button" class="btn btn-dark" data-city="Tokyo">Tokyo, Japan</button>
-        <br>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-3">
+            <div class="btn-group-vertical d-flex flex column col-3" role="group" aria-label="Vertical button group">
+              <br>
+                <button type="button" class="btn btn-dark city-button" data-city="Atlanta">Atlanta, GA</button>
+              <br>
+                <button type="button" class="btn btn-dark city-button" data-city="Paris">Paris, France</button>
+              <br>
+                <button type="button" class="btn btn-dark city-button" data-city="Mexico city">Mexico City, Mexico</button>
+              <br>
+                <button type="button" class="btn btn-dark city-button" data-city="Los angeles">Buena Vista, California</button>
+              <br>
+                <button type="button" class="btn btn-dark city-button" data-city="Tokyo">Tokyo, Japan</button>
+              <br>
+            </div>
+          </div>
+          <div class="col-9">
+            <h3 class="position-relative start-50 text-info">Weather</h3>
+            <div class="d-flex flex-row" id="weather-display"></div>  
+          </div>
+        </div>
       </div>
-      <div class="col-9">
-        <h3 class="position-relative start-50 text-info">Weather</h3>
-        <div class="weather-display"></div>   
-      </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
       <script src="assets/script.js"></script>
 </body>
 </html>
